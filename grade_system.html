@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function grade(){
+            var num=parseInt(document.getElementById("numb").value);
+            if (90<=num ){
+                document.getElementById("result").innerHTML = "A+";
+                
+            }
+            else if(80<=num){
+                document.getElementById("result").innerHTML = "A";
+            }
+            else if(70<=num){
+                document.getElementById("result").innerHTML = "B";
+            }
+            else if(60<=num){
+                document.getElementById("result").innerHTML = "C";
+            }
+            else if(50<=num){   
+                document.getElementById("result").innerHTML = "D";
+            }
+            else if(40<=num){
+                document.getElementById("result").innerHTML = "E";
+            }
+            else{
+                document.getElementById("result").innerHTML ="Fail"
+            }
+            
+        }
+        
+    </script>
+</head>
+<body>
+    Enter your percentage <input type="number" id="numb">
+    <button onclick="grade()">YOUR GRADE</button>
+    <h1 id="result"></h1>
+</body>
+</html>

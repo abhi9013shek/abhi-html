@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+        .logo img{
+            width:150px;
+            height:30px;
+        }
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px 10px 40px;
+        }
+        .links ul{
+            display: flex;
+            gap:30px;
+            align-items: center;
+            justify-content: center;
+            padding-left: 20px;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .links1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .links2 ul{
+            display: flex;
+            gap:20px;
+        }
+        .container2{
+            width:100%;
+            height: 584px;
+          background: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP5-1920x600') no-repeat center center/cover;
+            padding-left: 910px;
+            padding-top: 190px;
+            line-height: 50px;
+
+        }
+        .container3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .container3 img{
+            width:50px;
+            height:50px;
+        }
+        .microsoft{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .xbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .windows11{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .surface{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+            padding: 40px;
+            text-wrap: wrap;
+        }
+        .container4 img{
+            width: 100%;
+            height: auto;
+        }
+        .container5{
+          background: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-Hero-Xbox-Series-S:VP5-1596x600') no-repeat center center/cover;
+          width: 100%;
+          height: 505px;
+          padding-top: 180px;
+          padding-left: 100px;
+
+        }
+
+        
+        .btn1{
+            width: 127px;
+            height: 44px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            background-color: #0067b8;
+            color: white;
+            padding: none;
+        }
+        .box1{
+            width: 406px;
+            height: 515px;
+            background-color: #c5e6ff;
+
+        }
+        .bx2{
+            padding: 20px;
+        }
+        .tx4{
+            padding-top: 20px;
+            font-size: 18px;
+        }
+        .box2{
+            width: 406px;
+            height: 515px;
+            
+        }
+        .box3{
+            width: 406px;
+            height: 515px;
+            
+        }
+        .box4{
+            width: 406px;
+            height: 515px;
+            
+        }
+        .btn2{
+            width: 127px;
+            height: 44px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            background-color: #0067b8;
+            color: white;
+            padding: none;
+        }
+        .bx3{
+            padding-top: 100px;
+            padding-left: 20px;
+        }
+        .bx4{
+            padding-top: 65px;
+            padding-left: 20px;
+        }
+        .bx5{
+            padding-top: 120px;
+            padding-left: 20px;
+        }
+        .bx6{
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        .tx6{
+          padding-top: 20px;
+        }
+        .btn3{
+          width: 127px;
+            height: 44px;
+            border: 1px solid transparent;
+            background-color: #0067b8;
+            color: white;
+
+            
+        }
+        .bx7{
+          padding-top: 20px;
+        }
+        .box5{
+          width: 343px;
+          height: 438px;
+          background-color: #cea9f3
+        }
+        .container6 img{
+          width: 100%;
+          height: auto;
+
+        }
+        .container6{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 30px;
+          column-gap: 30px;
+        }
+        .box6{
+          width: 343px;
+          height: 438px;
+          background-color: #c5e6ff
+        }
+        .box7{
+          width: 343px;
+          height: 438px;
+          background-color: #c5e6ff
+        }
+        .box8{
+          width: 343px;
+          height: 438px;
+          background-color: #c5e6ff
+        }
+        .bx8{
+          padding-left: 20px;
+          padding-top: 30px;
+        }
+        .btn4{
+          width: 127px;
+            height: 44px;
+            border: 1px solid transparent;
+            background-color: #0067b8;
+            color: white;
+            
+        }
+        .btn5{
+          width: 127px;
+            height: 44px;
+            border: 1px solid transparent;
+            background-color: #0067b8;
+            color: white;
+            
+        }
+        .bx9{
+          padding-left: 20px;
+          padding-top: 30px;
+        }
+        .btn6{
+          width: 127px;
+            height: 44px;
+            border: 1px solid transparent;
+            background-color: #0067b8;
+            color: white;
+            
+        }
+        .bx10{
+          padding-left: 20px;
+          padding-top: 10px;
+        }
+        .btn7{
+          width: 127px;
+            height: 44px;
+            border: 1px solid transparent;
+            background-color: #0067b8;
+            color: white;
+            
+        }
+        .bx11{
+          padding-left: 20px;
+          padding-top: 40px;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            line-height: 30px;
+            padding: 30px;
+            background-color: #e0e0e0;
+        }
+        .footer h4{
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="links1">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="links">
+            <ul>
+               <a href="microsoft365.html"><li>Microsoft 365</li></a> 
+                <li>Products <i class='bx bxs-chevron-down'></i></li>
+                <li>Plans and Pricing</li>
+                <li>Resources <i class='bx bxs-chevron-down'></i></li>
+                <li>Support <i class='bx bxs-chevron-down'></i></li>
+            </ul>
+        </div>
+        </div>
+        <div class="links2">
+            <ul>
+                <li>All Microsoft <i class='bx bxs-chevron-down'></i></li>
+                <li>Search <i class='bx bx-search bx-rotate-90' style='color:#7a7272'  ></i></li>
+                <li>Sign in <i class='bx bx-user-circle' style='color:#574c4c'  ></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container2">
+        <h1 class="tx1">Surface Pro 9</h1>
+        <p class="tx2">Tablet versatility and laptop power — all in one ultra-portable device</p>
+        <button class="btn1">Learn More</button>
+    </div>
+    <div class="container3">
+        <div class="microsoft">
+            <div class="microsoft-logo">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40" alt="">
+            </div>
+            <div class="microsoft-link">
+                <a href="#">Choose Your Microsoft 365</a>
+            </div>
+        </div>
+        <div class="xbox">
+            <div class="xbox-logo">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Xbox-Games-Consoles?wid=40&hei=40" alt="">
+            </div>
+            <div class="xbox-link">
+                <a href="#">Shop Xbox</a>
+            </div>
+        </div>
+        <div class="windows11">
+            <div class="windows-logo">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40" alt="">
+            </div>
+            <div class="window-link">
+                <a href="#">Get Windows 11</a>
+            </div>
+        </div>
+        <div class="surface">
+            <div class="surface-logo">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Surface-Devices?wid=40&hei=40" alt="">
+            </div>
+            <div class="surface-links">
+                <a href="#">Explore Surface devices</a>
+            </div>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="box1">
+            <div class="bx1">            
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-5-M1-Platinum-01-1?wid=380&hei=213&fit=crop" alt=""></div>
+            <div class="bx2">
+                <h1 class="tx3">Surface Laptop 5</h1>
+                <p class="tx4">Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+            </div>
+            <div class="bx3"><button class="btn2">Learn More</button></div>
+        </div>
+        <div class="box2">
+            <div class="bx1">            
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Studio-01-CP?wid=380&hei=213&fit=crop" alt=""></div>
+                <div class="bx2">
+                    <h1 class="tx3">Surface Laptop Studio</h1>
+                    <p class="tx4">Flex your creative muscle on the most powerful Surface Laptop. Now available with Windows 11.</p>
+                </div>
+                <div class="bx4"><button class="btn2">Learn More</button></div>
+        </div>
+        <div class="box3">
+            <div class="bx1">            
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?wid=380&hei=213&fit=crop" alt=""></div>
+                <div class="bx2">
+                    <h1 class="tx3">Xbox Series X</h1>
+                    <p class="tx4">The fastest, most powerful Xbox ever.</p>
+                </div>
+                <div class="bx5"><button class="btn2">Learn More</button></div>
+        </div>
+        <div class="box4">
+            <div class="bx1">            
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Lifestyle-Sandstone-Icon-Toss?wid=380&hei=213&fit=crop" alt=""></div>
+                <div class="bx2">
+                    <h1 class="tx3">Maximise the everyday with Microsoft 365</h1>
+                    <p class="tx4">
+                        Get online protection, secure cloud storage and innovative apps designed to fit your needs all in one plan.</p>
+                </div>
+                <div class="bx6"><button class="btn2">Learn More</button></div>
+        </div>
+    </div>
+    <div class="container5">
+            <h1 class="tx5">Xbox Series S</h1>
+            <p class="tx6">Next-gen performance in the smallest Xbox ever</p>
+            <div class="bx7"><button class="btn3">Shop Xbox Seris S</button></div>
+    </div>
+    <div class="container6">
+      <div class="box5">
+        <div class="bx1">            
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Surf-CP-SurfaceFamilyForBusiness?wid=380&hei=213&fit=crop" alt=""></div>
+          <div class="bx2">
+              <h1 class="tx3">Surface for Business</h1>
+              <p class="tx4">No matter what you do, there’s a Surface to help you do it.</p>
+          </div>
+          <div class="bx8"><button class="btn4">Shop Now</button></div>
+      </div>
+      <div class="box6">
+        <div class="bx1">            
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Microsoft-Teams-Commercial?wid=380&hei=213&fit=crop" alt=""></div>
+          <div class="bx2">
+              <h1 class="tx3">Get Microsoft Teams For Free</h1>
+              <p class="tx4">Online meating , chat and shared cloud storage-all in one place.</p>
+          </div>
+          <div class="bx9"><button class="btn5">Sign up for free</button></div>
+      </div>
+      <div class="box7">
+        <div class="bx1">            
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Windows-11-Business?wid=380&hei=213&fit=crop" alt=""></div>
+          <div class="bx2">
+              <h1 class="tx3">Windows 11 For Business</h1>
+              <p class="tx4">Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</p>
+          </div>
+          <div class="bx10"><button class="btn6">Learn More</button></div>
+      </div>
+      <div class="box8">
+        <div class="bx1">            
+          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Azure-AI-Bloom?wid=380&hei=213&fit=crop" alt=""></div>
+          <div class="bx2">
+              <h1 class="tx3">Join the Era Of AI</h1>
+              <p class="tx4">
+                Create, communicate, and code with the latest Microsoft AI solutions.</p>
+          </div>
+          <div class="bx11"><button class="btn7">Explore AI solutions</button></div>
+      </div>
+    </div>
+    <div class="footer">
+       <div class="box11">
+        <ul>
+           <li><h4> What's new</h4></li>
+           <li>Games</li>
+            <li>Surface Pro 9</li>
+            <li>Surface Laptop 5</li>
+            <li>Surface Laptop Go 2</li>
+            <li>Microsoft Copilot</li>
+            <li>Microsoft 365</li>
+            <li>Windows 11 apps</li>
+        </ul>
+       </div>
+       <div class="box12">
+        <ul>
+            <li> <h4>Microsoft Store</h4></li>
+            <li>Account Profile</li>
+             <li>Download Center</li>
+             <li>Microsoft Store Support</li>
+             <li>Returns</li>
+             <li>Order Tracking</li>
+         </ul>
+       </div>
+       <div class="box13">
+            <ul>
+                <li><h4>Education</h4></li>
+                <li>Microsoft in education</li>
+                <li>Devices for education</li>
+                <li>Microsoft Teams for Education</li>
+                <li>Microsoft 365 Education</li>
+                <li>Office Education</li>
+                <li>Educator training and development</li>
+                <li>Deals for students and parents</li>
+                <li>Azure for students</li>
+            </ul>
+       </div>
+       <div class="box14">
+        <ul>
+            <li><h4>Business</h4></li>
+            <li>Microsoft Cloud</li>
+            <li>Microsoft Security</li>
+            <li>Azure</li>
+            <li>Dynamics 365</li>
+            <li>Microsoft 365</li>
+            <li>Microsoft Advertising</li>
+            <li>Copilot for Microsoft 365</li>
+            <li>Microsoft Teams</li>
+        </ul>
+       </div>
+       <div class="box15">
+        <ul>
+            <li><h4>Developer & IT</h4></li>
+            <li>Developer Center</li>
+            <li>Documentation</li>
+            <li>Microsoft Learn</li>
+            <li>Microsoft Tech Community</li>
+            <li>Azure Marketplace</li>
+            <li>AppSource</li>
+            <li>Microsoft Power Platform</li>
+            <li>Visual Studio</li>
+        </ul>
+       </div>
+       <div class="box16">
+        <ul>
+            <li><h4>Company</h4></li>
+            <li>Careers</li>
+            <li>About Microsoft</li>
+            <li>Company news</li>
+            <li>Privacy at Microsoft</li>
+            <li>Investors</li>
+            <li>Security</li>
+            <li>Sustainability</li>
+        </ul>
+       </div>
+    </div>
+</body>
+</html>

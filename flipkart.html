@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .content{
+            display:none;
+        }
+        .search{
+            display: flex;
+           
+            align-items: center;
+        }
+        input{
+            border: 1px solid transparent;
+            border-radius: 10px;
+        }
+    
+        .search input{
+            width:400px;
+            height: 30px;
+        }
+        @media screen and (max-width:590px) {
+            .main{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo{
+                
+            }
+        .login{
+            gap: 20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="">
+        </div>
+        <div class="search">
+            
+            <input type="search" placeholder="Search for product,brands and More">
+        </div>
+        <div class="login">
+           
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="">
+            Login
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt=""> Cart
+        
+        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="">Beacome a sellar</div>
+    </div>
+</body>
+</html>

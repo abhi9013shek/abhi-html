@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Document</title>
+  <style>
+    .first img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+      align-items: center;
+
+    }
+
+    .links ul {
+      display: flex;
+      gap: 30px;
+      list-style-type: none;
+
+
+    }
+
+    .first {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .first ul {
+      display: flex;
+      list-style-type: none;
+      column-gap: 30px;
+    }
+
+    h1 {
+      font-size: 50px;
+
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    body {
+      padding: 20px;
+    }
+
+    @media screen and (max-width:590px ) {
+    .navigation{
+      flex-direction: column;
+    }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="first">
+    <div class="logo1">
+      <img src="https://logodownload.org/wp-content/uploads/2019/05/jordan-logo.png" alt="">
+
+    </div>
+    <div class="links2">
+      <ul>
+        <li>Find a Store</li>
+        <li>Help</li>
+        <li>Join Us</li>
+        <li>Sign in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/128/732/732229.png" alt="">
+    </div>
+    <div class="links">
+      <ul>
+        <li>New&Featured</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Kids</li>
+        <li>Sale</li>
+        <li>Customise</li>
+      </ul>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search-alt-2'></i>
+      <input type="search" placeholder="Search">
+      <i class='bx bx-heart'></i>
+      <i class='bx bx-shopping-bag'></i>
+    </div>
+
+  </div>
+</body>
+
+</html>

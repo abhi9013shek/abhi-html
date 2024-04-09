@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function perentage(){ 
+    var p = parseInt(document.getElementById("p").value);
+    if(p>=90){
+          document.getElementById("result").innerHTML="Your grade is A";}
+     elseif(p>=80){
+    document.getElementById("result").innerHTML="Your grade is B";}
+     elseif(p>=70){
+    document.getElementById("result").innerHTML="Your grade is C";}
+     elseif(p>=60){
+        document.getElementById("result").innerHTML="Your grade is D";}
+     else{document.getElementById("result").innerHTML="Your are Fail";}}
+     </script>
+
+</head>
+<body>
+    Enter your Grade:<input type="number"> id="p"><br>
+    <button onclick="perentage()"></button>
+    <h1 id="result"></h1>
+    
+</body>
+</html>

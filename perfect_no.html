@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var num=parseInt(document.getElementById("num").value);
+            var sum=0;
+            for(var i=0;i<num;i++){
+                if(num%i==0){
+                    sum=sum+i;
+                }
+            }
+            var check=sum==num;
+            if(check){
+                document.getElementById("result").innerHTML="You entered a perfect number";
+
+            }
+            else{
+                document.getElementById("result").innerHTML="not a perfect number";
+            }
+        }
+    </script>
+</head>
+<body>
+    enter a number <input type="number" id="num"><br>
+    <button onclick="check()">CHECK</button>
+    <h1 id="result"></h1>
+</body>
+</html>

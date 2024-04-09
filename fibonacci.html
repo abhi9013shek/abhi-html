@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function print1(){
+            var num=parseInt(document.getElementById("num").value);
+            var n1=null;
+            var n2=1;
+            document.getElementById("result").innerHTML = n1 + "<br>";
+            document.getElementById("result").innerHTML = n2 + "<br>";
+            
+            var n3;
+            for(var i=2;i<=num;i++){
+                
+                n3=n1+n2;
+                document.getElementById("result").innerHTML += n3+ "<br>";
+                n1=n2;
+                n2=n3;
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter numberof element to print <input type="number" id="num"><br>
+    <button onclick="print1()">PRINT</button>
+    <h1 id="result"></h1>
+</html>

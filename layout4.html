@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0px;
+        /* padding: 10px 10px 10px 10px; */
+        box-sizing: border-box;
+        padding: 0;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(4 200px);
+        grid-template-rows: repeat(3 200px);
+        gap: 10px;
+        border: 2px solid black;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(47, 139, 220);
+        
+    }
+    .main div{
+        background-color: rgb(62, 236, 181);
+    }
+    .box1{
+        grid-row-start:1 ;
+        grid-row-end: 4;
+        background-color: rgb(28, 191, 191);
+    }
+    .box2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .box3{
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .box6{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start:2 ;
+        grid-row-end: 4;
+    }
+
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        
+    </div>
+</body>
+</html>

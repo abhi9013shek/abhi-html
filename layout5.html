@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(4 250px);
+        grid-template-rows: repeat(4 250px);
+        width: 100%;
+        gap: 10px;
+        border: 2px solid black;
+        height: 400px;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(63, 168, 249);
+    }
+    .main div{
+        background-color: rgb(64, 213, 151);
+        text-align: center;
+    }
+    .box1{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        
+    }
+    .box2{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .box4{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .box3{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+    }
+    .box5{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div class="box1">Header</div>
+        <div class="box2">side</div>
+        <div class="box3">main</div>
+        <div class="box4">side</div>
+        <div class="box5">footer</div>
+    </div>
+</body>
+</html>

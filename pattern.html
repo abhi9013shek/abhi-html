@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function star(){
+            var rows = parseInt(document.getElementById("rows").value);
+            for(var i=1; i<=rows; i++){
+                for(var j=1; j<=rows; j++){
+                    document.getElementById("result").innerHTML += "@";
+                }
+                document.getElementById("result").innerHTML += "<br>";
+            }
+        }
+      
+    </script>
+</head>
+<body>
+Enter the row: <input type="number" id="rows"> <br>
+    <button onclick="star()">PRINT</button>
+    <h1 id="result"></h1>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+
+        }
+        .screen{
+            background-color: rgb(0, 0, 0);
+            width: 300px;
+            height: 140px;
+        }
+        .main{
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 20px;
+            
+        }
+        button{
+            width: 80px;
+            height: 80px;
+            border: 1px solid transparent;
+            border-radius: 50px;
+            background-color: #d4d4d2;
+            font-size: 50px;
+        }
+        #divide{
+            background-color: rgb(226, 155, 3);
+        }
+        #x{
+            background-color: rgb(226, 155, 3);
+        }
+        #minus{
+            background-color: rgb(226, 155, 3);
+        }
+        #plus{
+            background-color: rgb(226, 155, 3);
+        }
+        #zero{
+            width: 160px;
+            height: 80px;
+            
+        }
+        #equal{
+            background-color: rgb(226, 155, 3);
+        }
+        .btn{
+            line-height: 80px;
+            
+            
+        }
+        #result{
+            width:330px;
+            height: 100px;
+            font-size:50px;
+            text-align: right;
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <script>
+        
+        // Function that display dis 
+		function dis(val) { 
+			document.getElementById("result").value += val 
+		} 
+
+	
+		
+
+		// Function that evaluates the digit and return result 
+		function solve() { 
+			let x = document.getElementById("result").value;
+			let y = math.evaluate(x) 
+			document.getElementById("result").value = y 
+		} 
+
+		// Function that clear the display 
+		function clr() { 
+			document.getElementById("result").value = "" 
+		} 
+    </script>
+    <div class="main">
+        <div class="screen">
+            <input type="text" id="result">
+        
+        </div>
+        <div class="btn">
+        <div class="row1">
+            <button id="ac" onclick="clr()">AC</button>
+            <button id="plusminus" onclick="dis('+')">+/-</button>
+            <button id="percentage" onclick="dis('%')">%</button>
+            <button id="divide"onclick="dis('/')">/</button>
+        </div>
+        <div class="row2">
+            <button id="seven"onclick="dis('7')">7</button>
+            <button id="eight"onclick="dis('8')">8</button>
+            <button id="nine"onclick="dis('9')">9</button>
+            <button id="x" onclick="dis('*')">x</button>
+        </div>
+        <div class="row3">
+            <button id="four"onclick="dis('4')">4</button>
+            <button id="five"onclick="dis('5')">5</button>
+            <button id="six"onclick="dis('6')">6</button>
+            <button id="minus"onclick="dis('-')">-</button>
+        </div>
+        <div class="row4">
+            <button id="three"onclick="dis('3')">3</button>
+            <button id="two"onclick="dis('2')">2</button>
+            <button id="one"onclick="dis('1')">1</button>
+            <button id="plus"onclick="dis('+')">+</button>
+        </div>
+        <div class="row5">
+            <button id="zero"onclick="dis('0')">0</button>
+            <button id="point"onclick="dis('.')">.</button>
+            <button id="equal"onclick="solve()">=</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

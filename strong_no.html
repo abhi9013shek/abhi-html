@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var num = parseInt(document.getElementById("num").value);
+         
+            var temp;  
+            var rem;
+            var sum=0;
+            while(temp>0){
+                var fact=1;
+                rem=temp%10;
+                for(var i=1;i<=rem;i++){
+                    fact=fact*i;
+                }
+                sum= sum+fact;
+                temp=parseInt(temp/10);
+            }
+            if(num=sum){
+                document.getElementById("result").innerHTML="strong number";
+            }
+            else{
+                document.getElementById("result").innerHTML="NOT a strong number";
+
+            }
+        }
+    </script>
+</head>
+<body>
+    enter a number <input type="number" id="num"><br>
+    <button onclick="check()">CHECK</button>
+    <h1 id="result"></h1>
+</body>
+</html>

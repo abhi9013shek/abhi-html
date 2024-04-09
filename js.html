@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script>
+        function bmi(){
+            var w = parseFloat(document.getElementById("w").value);
+            var h = parseFloat(document.getElementById("h").value);
+            var bmi = w/(h*h);
+            document.getElementById("result").innerHTML = "Your Bmi is:" + bmi;
+        }
+    </script>
+</head>
+<body>
+    Enter Your Weight: <input type="number" id="w"> <br>
+    Enter Your Height: <input type="number" id="h"> <br>
+    <Button onclick="bmi()">Enter</Button>
+    <h1 id="result"></h1>
+</body>
+</html>

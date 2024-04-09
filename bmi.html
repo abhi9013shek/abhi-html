@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bmi(){
+            var w=parseFloat(document.getElementById("w").value);
+            var h=parseFloat(document.getElementById("h").value);
+            var bmi = w/(h*h);
+            
+            if(bmi<=18.5){
+                document.getElementById("result").innerHTML = "Your are underweight" + bmi;
+            }
+            else if(bmi<=24.9){
+                document.getElementById("result").innerHTML = "Your are healthy" + bmi;
+            }
+            else if(bmi<=29.9){
+                document.getElementById("result").innerHTML = "Your are overweight" + bmi;
+            }
+            else{
+                document.getElementById("result").innerHTML = "Your are obey" + bmi;
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter your weight <input type="number" id="w" placeholder="weight in Kg"> <br>
+    Enter your height <input type="number" id="h" placeholder="Height in meter"><br>
+    <button onclick="bmi()">CHECK</button>
+    <h1 id="result"> </h1>
+</body>
+</html>

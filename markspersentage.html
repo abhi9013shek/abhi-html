@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function persent(){
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var c = parseInt(document.getElementById("c").value);
+            var d = parseInt(document.getElementById("d").value);
+            var e = parseInt(document.getElementById("e").value);
+            var t = parseInt(document.getElementById("t").value);
+            var sum=a+b+c+d+e;
+            var total=t*5;
+            persent=(sum*100)/total;
+            document.getElementById("result").innerHTML="Your Total percentage is "+persent;
+
+        }
+    </script>
+</head>
+<body>
+    Enter marks out of :<input type="number" id="t"><br>
+    enter marks of first subject : <input type="number" id="a"><br>
+    enter marks of second subject : <input type="number" id="b"><br>
+    enter marks of second subject : <input type="number" id="c"><br>
+    enter marks of second subject : <input type="number" id="d"><br>
+    enter marks of second subject : <input type="number" id="e"><br>
+    <button onclick="persent()">Total percentage</button>
+    <h1 id="result"></h1>
+</body>
+</html>
